@@ -16,3 +16,27 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+// Name und Alter wird erfragt
+let person = prompt("Name?")
+let age = prompt("Alter?")
+let beverage;
+
+// Was trinkt die Person
+switch (true) {
+    case age <= 5:
+        beverage = "Milch";
+        break;
+    case age <= 12:
+        beverage = "Saft";
+        break;
+    case age <= 17:
+        beverage = "Cola";
+        break;
+    default:
+        beverage = "Wein";
+        break;
+}
+
+// Aussage
+
+console.log(person + " trinkt " + beverage + ".");
