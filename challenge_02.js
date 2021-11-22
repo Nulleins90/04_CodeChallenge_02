@@ -22,8 +22,8 @@ let age = parseInt(prompt("Alter?"));
 let beverage;
 
 // Was trinkt die Person
-switch (age) {
-    case age <= 0:
+switch (true) {
+    case age < 0:
         break;
     case age <= 5:
         beverage = "Milch";
