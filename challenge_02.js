@@ -22,9 +22,8 @@ let age = parseInt(prompt("Alter?"));
 let beverage;
 
 // Was trinkt die Person
-switch (true) {
-    case age < 0:
-        beverage = "nichts";
+switch (age) {
+    case age <= 0:
         break;
     case age <= 5:
         beverage = "Milch";
@@ -39,10 +38,13 @@ switch (true) {
         beverage = "Wein";
         break;
     default:
-        beverage = "nichts"
         break;
 }
 
 // Aussage
-
-console.log(person + " trinkt " + beverage + ".");
+if (age >= 0) {
+    console.log(person + " trinkt " + beverage + ".");
+}
+else {
+    console.log("Angegebenes Alter nicht möglich")
+}
